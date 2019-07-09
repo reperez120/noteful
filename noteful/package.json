@@ -1,0 +1,47 @@
+{
+  "name": "notefulorganizingreactcode",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "date-fns": "^1.30.1",
+    "dotenv": "^8.0.0",
+    "helmet": "^3.18.0",
+    "knex": "^0.18.3",
+    "pg": "^7.11.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "3.0.1"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "build": "react-scripts build",
+    "test": "mocha --require test/setup.js",
+    "migrate": "postgrator --config postgrator-config.js",
+    "eject": "react-scripts eject",
+    "serve": "serve -s build",
+    "preserve": "npm run build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1",
+    "postgrator-cli": "^3.1.0",
+    "serve": "^11.0.1"
+  }
+}
